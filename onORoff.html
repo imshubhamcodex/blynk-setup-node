@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ON/OFF</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="style/onORoff.css">
+
+
+
+
+</head>
+
+<body>
+
+
+<script type="text/javascript">
+		var d13=1;
+		var d2=1;
+		var d3=1;
+		var d4=1;
+		var d5=1;
+		var d6=1;
+		var d7=1;
+		var d8=1;
+		var d9=1;
+		var d10=1;
+		var d11=1;
+		var d12=1;
+		
+		var a0=1;
+		var a1=1;
+		var a2=1;
+		var a3=1;
+		var a4=1;
+		var a5=1;
+		var authToken=localStorage.getItem("auth-tokken");
+
+		function changeBGd2()
+		{
+				if(document.getElementById('D2').checked==true && d2%2!=0 )
+		  {			d2++;
+				document.getElementById("d2").src="./images/od2.jpg";
+				document.getElementById("d2").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+				
+				 
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D2?value=0';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+
+
+			}
+			else{
+
+				d2++;
+				document.getElementById("d2").src="./images/ofd2.jpg";
+				document.getElementById("d2").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+
+				
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D2?value=1';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+				
+			}
+
+		}
+
+
+			function changeBGd3()
+		{
+				if(document.getElementById('D3').checked==true && d3%2!=0 )
+		  {			d3++;
+				document.getElementById("d3").src="./images/od3.jpg";
+				document.getElementById("d3").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+				
+				 
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D3?value=0';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+
+
+			}
+			else{
+
+				d3++;
+				document.getElementById("d3").src="./images/ofd3.jpg";
+				document.getElementById("d3").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+
+				
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D3?value=1';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+				
+			}
+
+		}
+
+
+			function changeBGd4()
+		{
+				if(document.getElementById('D4').checked==true && d4%2!=0 )
+		  {			d4++;
+				document.getElementById("d4").src="./images/od4.jpg";
+				document.getElementById("d4").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+				
+				 
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D4?value=0';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+
+
+			}
+			else{
+
+				d4++;
+				document.getElementById("d4").src="./images/ofd4.jpg";
+				document.getElementById("d4").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+
+				
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D4?value=1';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+				
+			}
+
+		}
+
+
+
+			function changeBGd5()
+		{
+				if(document.getElementById('D5').checked==true && d5%2!=0 )
+		  {			d5++;
+				document.getElementById("d5").src="./images/od5.jpg";
+				document.getElementById("d5").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+				
+				 
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D5?value=0';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+
+
+			}
+			else{
+
+				d5++;
+				document.getElementById("d5").src="./images/ofd5.jpg";
+				document.getElementById("d5").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+
+				
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D5?value=1';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+				
+			}
+
+		}
+
+
+			function changeBGd6()
+		{
+				if(document.getElementById('D6').checked==true && d6%2!=0 )
+		  {			d6++;
+				document.getElementById("d6").src="./images/od6.jpg";
+				document.getElementById("d6").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+				
+				 
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D6?value=0';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+
+
+			}
+			else{
+
+				d6++;
+				document.getElementById("d6").src="./images/ofd6.jpg";
+				document.getElementById("d6").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+
+				
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D6?value=1';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+				
+			}
+
+		}
+
+			function changeBGd7()
+		{
+				if(document.getElementById('D7').checked==true && d7%2!=0 )
+		  {			d7++;
+				document.getElementById("d7").src="./images/od7.jpg";
+				document.getElementById("d7").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+				
+				 
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D7?value=0';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+
+
+			}
+			else{
+
+				d7++;
+				document.getElementById("d7").src="./images/ofd7.jpg";
+				document.getElementById("d7").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+
+				
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D7?value=1';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+				
+			}
+
+		}
+
+			function changeBGd8()
+		{
+				if(document.getElementById('D8').checked==true && d8%2!=0 )
+		  {			d8++;
+				document.getElementById("d8").src="./images/od8.jpg";
+				document.getElementById("d8").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+				
+				 
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D8?value=0';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+
+
+			}
+			else{
+
+				d8++;
+				document.getElementById("d8").src="./images/ofd8.jpg";
+				document.getElementById("d8").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+
+				
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D8?value=1';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+				
+			}
+
+		}
+
+			function changeBGd9()
+		{
+				if(document.getElementById('D9').checked==true && d9%2!=0 )
+		  {			d9++;
+				document.getElementById("d9").src="./images/od9.jpg";
+				document.getElementById("d9").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+				
+				 
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D9?value=0';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+
+
+			}
+			else{
+
+				d9++;
+				document.getElementById("d9").src="./images/ofd9.jpg";
+				document.getElementById("d9").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+
+				
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D9?value=1';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+				
+			}
+
+		}
+
+			function changeBGd10()
+		{
+				if(document.getElementById('D10').checked==true && d10%2!=0 )
+		  {			d10++;
+				document.getElementById("d10").src="./images/od10.jpg";
+				document.getElementById("d10").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+				
+				 
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D10?value=0';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+
+
+			}
+			else{
+
+				d10++;
+				document.getElementById("d10").src="./images/ofd10.jpg";
+				document.getElementById("d10").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+
+				
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D10?value=1';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+				
+			}
+
+		}
+
+			function changeBGd11()
+		{
+				if(document.getElementById('D11').checked==true && d11%2!=0 )
+		  {			d11++;
+				document.getElementById("d11").src="./images/od11.jpg";
+				document.getElementById("d11").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+				
+				 
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D11?value=0';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+
+
+			}
+			else{
+
+				d11++;
+				document.getElementById("d11").src="./images/ofd11.jpg";
+				document.getElementById("d11").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+
+				
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D11?value=1';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+				
+			}
+
+		}
+
+			function changeBGd12()
+		{
+				if(document.getElementById('D12').checked==true && d12%2!=0 )
+		  {			d12++;
+				document.getElementById("d12").src="./images/od12.jpg";
+				document.getElementById("d12").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+				
+				 
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D12?value=0';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+
+
+			}
+			else{
+
+				d12++;
+				document.getElementById("d12").src="./images/ofd12.jpg";
+				document.getElementById("d12").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+
+				
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D12?value=1';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+				
+			}
+
+		}
+
+			function changeBGd13()
+		{
+				if(document.getElementById('D13').checked==true && d13%2!=0 )
+		  {			d13++;
+				document.getElementById("d13").src="./images/od13.jpg";
+				document.getElementById("d13").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+				
+				 
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D13?value=0';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+
+
+			}
+			else{
+
+				d13++;
+				document.getElementById("d13").src="./images/ofd13.jpg";
+				document.getElementById("d13").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+
+				
+				 var HttpClient = function() {
+				 this.get = function(aUrl, aCallback) {
+				 var anHttpRequest = new XMLHttpRequest();
+				 anHttpRequest.onreadystatechange = function() { 
+				 if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+				 aCallback(anHttpRequest.responseText);
+				 }
+				 anHttpRequest.open( "GET", aUrl, true ); 
+				 anHttpRequest.send( null ); 
+				 }
+				 }
+				 var theurl='http://blynk-cloud.com/'+authToken+'/update/D13?value=1';
+				 var client = new HttpClient();
+				 client.get(theurl, function(response) { 
+
+				 });
+
+				
+			}
+
+		}
+
+		// function changeBGa0()
+		// {
+
+		// 	if(document.getElementById('A0').checked==true && a0%2!=0 )
+		//   {
+		// 		document.getElementById("a0").src="./images/oa0.jpg";
+		// 		document.getElementById("a0").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+		// 		a0++;
+		// 	}
+		// 	else{
+		// 		a0++;
+		// 		document.getElementById("a0").src="./images/ofa0.jpg";
+		// 		document.getElementById("a0").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+		// 	}
+		// }
+
+
+
+		// 	function changeBGa1(){
+
+
+		// 		if(document.getElementById('A1').checked==true && a1%2!=0 )
+		//   {
+		// 		document.getElementById("a1").src="./images/oa1.jpg";
+		// 		document.getElementById("a1").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+		// 		a1++;
+		// 	}
+		// 	else{
+		// 		a1++;
+		// 		document.getElementById("a1").src="./images/ofa1.jpg";
+		// 		document.getElementById("a1").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+		// 	}
+		// 	}
+
+
+		// 	function changeBGa2(){
+
+		// 		if(document.getElementById('A2').checked==true && a2%2!=0 )
+		//   {
+		// 		document.getElementById("a2").src="./images/oa2.jpg";
+		// 		document.getElementById("a2").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+		// 		a2++;
+		// 	}
+		// 	else{
+		// 		a2++;
+		// 		document.getElementById("a2").src="./images/ofa2.jpg";
+		// 		document.getElementById("a2").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+		// 	}
+		// 	}
+
+		// 		function changeBGa3(){
+		// 				if(document.getElementById('A3').checked==true && a3%2!=0 )
+		//   {
+		// 		document.getElementById("a3").src="./images/oa3.jpg";
+		// 		document.getElementById("a3").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+		// 		a3++;
+		// 	}
+		// 	else{
+		// 		a3++;
+		// 		document.getElementById("a3").src="./images/ofa3.jpg";
+		// 		document.getElementById("a3").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+		// 	}
+
+		// 		}
+
+		// 		function changeBGa4(){
+		// 			if(document.getElementById('A4').checked==true && a4%2!=0 )
+		//   {
+		// 		document.getElementById("a4").src="./images/oa4.jpg";
+		// 		document.getElementById("a4").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+		// 		a4++;
+		// 	}
+		// 	else{
+		// 		a4++;
+		// 		document.getElementById("a4").src="./images/ofa4.jpg";
+		// 		document.getElementById("a4").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+		// 	}
+		// 		}
+
+		// 		function changeBGa5(){
+
+		// 		if(document.getElementById('A5').checked==true && a5%2!=0 )
+		//   {
+		// 		document.getElementById("a5").src="./images/oa5.jpg";
+		// 		document.getElementById("a5").style["boxShadow"] = "10px 10px 5px rgba(0,59,0,.9)";
+		// 		a5++;
+		// 	}
+		// 	else{
+		// 		a5++;
+		// 		document.getElementById("a5").src="./images/ofa0.jpg";
+		// 		document.getElementById("a5").style["boxShadow"] = "10px 10px 5px rgba(153,0,0,.9)";
+		// 	}
+		// 		}
+
+
+
+
+
+		
+		
+			
+
+				
+	
+</script>
+
+
+<form action="onORoff.html">
+			     
+			     <div  id="heading">
+			     	<h1> Here you can do switching </h1>
+			     </div>
+			     
+     	<div id = 'pins'> 
+
+     		<table>
+     			<tr>
+     				<td>
+     					<label>
+					  	<input type="radio" id="D2"  value="big">
+					  	<img id="d2" onclick="changeBGd2()" src="./images/od2.jpg">
+						</label>
+     				</td>
+     				<td>
+     					<label>
+					  	<input type="radio" id="D3" value="big">
+					  	<img id="d3" onclick="changeBGd3()"  src="./images/od3.jpg">
+						</label>
+     				</td>
+     			</tr>
+
+     			<tr>
+     				<td>
+     					<label>
+					  	<input type="radio" id="D4"  value="big">
+					  	<img id="d4" onclick="changeBGd4()"  src="./images/od4.jpg">
+						</label>
+     				</td>
+     				<td>
+						<label>
+					  	<input type="radio" id="D5" value="big">
+					  	<img id="d5" onclick="changeBGd5()"  src="./images/od5.jpg">
+						</label>
+     				</td>
+     			</tr>
+     			<tr>
+     				<td>
+     					<label>
+					  	<input type="radio" id="D6"  value="big">
+					  	<img id="d6" onclick="changeBGd6()" src="./images/od6.jpg">
+						</label>
+     				</td>
+     				<td>
+     					<label>
+					  	<input type="radio" id="D7"  value="big">
+					  	<img id="d7" onclick="changeBGd7()" src="./images/od7.jpg">
+						</label>
+     				</td>
+     			</tr>
+     			<tr>
+     				<td>
+     					<label>
+					  	<input type="radio" id="D8"  value="big">
+					  	<img id="d8" onclick="changeBGd8()" src="./images/od8.jpg">
+						</label>
+     				</td>
+     				<td>
+     					<label>
+					  	<input type="radio" id="D9" value="big">
+					  	<img id="d9" onclick="changeBGd9()" src="./images/od9.jpg">
+						</label>
+     				</td>
+     			</tr>
+     			<tr>
+     				<td>
+     					<label>
+					  	<input type="radio" id="D10"  value="big">
+					  	<img id="d10" onclick="changeBGd10()"  src="./images/od10.jpg">
+						</label>
+     				</td>
+     				<td>
+     					<label>
+					  	<input type="radio" id="D11"  value="big">
+					  	<img id="d11" onclick="changeBGd11()" src="./images/od11.jpg">
+						</label>
+     				</td>
+     			</tr>
+     			<tr>
+     				<td>
+     					<label>
+					  	<input type="radio" id="D12"  value="big">
+					  	<img id="d12" onclick="changeBGd12()" src="./images/od12.jpg">
+						</label>
+     				</td>
+     				<td>
+     					<label>
+					  	<input type="radio" id="D13"  value="small" >
+					  	<img id="d13" onclick="changeBGd13()"  src="./images/od13.jpg">
+						</label>
+     				</td>
+     			</tr>
+     			<tr>
+     				<td>
+     					<label>
+					  	<input type="radio" id="A0"  value="big">
+					  	<img id="a0" onclick="changeBGa0()" src="./images/oa0.jpg">
+						</label>
+     				</td>
+     				<td>
+     					<label>
+					  	<input type="radio" id="A1"  value="big">
+					  	<img id="a1" onclick="changeBGa1()" src="./images/oa1.jpg">
+						</label>
+     				</td>
+     			</tr>
+     			<tr>
+     				<td>
+     					<label>
+					  	<input type="radio" id="A2"  value="big">
+					  	<img id="a2"onclick="changeBGa2()" src="./images/oa2.jpg">
+						</label>
+     				</td>
+     				<td>
+     					<label>
+					  	<input type="radio" id="A3"  value="big">
+					  	<img id="a3" onclick="changeBGa3()" src="./images/oa3.jpg">
+						</label>
+     				</td>
+     			</tr>
+     			<tr>
+     				<td>
+     					<label>
+					  	<input type="radio" id="A4"  value="big">
+					  	<img id="a4" onclick="changeBGa4()" src="./images/oa4.jpg">
+						</label>
+     				</td>
+     				<td>
+     					<label>
+					  	<input type="radio" id="A5"  value="big">
+					  	<img id="a5" onclick="changeBGa5()" src="./images/oa5.jpg">
+						</label>
+     				</td>
+     			</tr>
+     		</table>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+        </div>
+
+     
+
+	</form>
+
+
+
+		<script type="text/javascript">
+	var sd13=localStorage.getItem("sd13")
+	var sd12=localStorage.getItem("sd12")
+	var sd11=localStorage.getItem("sd11")
+	var sd10=localStorage.getItem("sd10")
+	var sd9=localStorage.getItem("sd9")
+	var sd8=localStorage.getItem("sd8")
+	var sd7=localStorage.getItem("sd7")
+	var sd6=localStorage.getItem("sd6")
+	var sd5=localStorage.getItem("sd5")
+	var sd4=localStorage.getItem("sd4")
+	var sd3=localStorage.getItem("sd3")
+	var sd2=localStorage.getItem("sd2")
+	var sa0=localStorage.getItem("sa0")
+	var sa1=localStorage.getItem("sa1")
+	var sa2=localStorage.getItem("sa2")
+	var sa3=localStorage.getItem("sa3")
+	var sa4=localStorage.getItem("sa4")
+	var sa5=localStorage.getItem("sa5")
+	
+	if(sd13==1)
+		document.getElementById('d13').style.display="block";
+	else
+		document.getElementById('d13').style.display="none";
+
+	if(sd12==1)
+		document.getElementById('d12').style.display="block";
+	else
+		document.getElementById('d12').style.display="none";
+
+	if(sd11==1)
+		document.getElementById('d11').style.display="block";
+	else
+		document.getElementById('d11').style.display="none";
+
+	if(sd10==1)
+		document.getElementById('d10').style.display="block";
+	else
+		document.getElementById('d10').style.display="none";
+
+	if(sd9==1)
+		document.getElementById('d9').style.display="block";
+	else
+		document.getElementById('d9').style.display="none";
+
+	if(sd8==1)
+		document.getElementById('d8').style.display="block";
+	else
+		document.getElementById('d8').style.display="none";
+
+	if(sd7==1)
+		document.getElementById('d7').style.display="block";
+	else
+		document.getElementById('d7').style.display="none";
+
+	if(sd6==1)
+		document.getElementById('d6').style.display="block";
+	else
+		document.getElementById('d6').style.display="none";
+
+	if(sd5==1)
+		document.getElementById('d5').style.display="block";
+	else
+		document.getElementById('d5').style.display="none";
+
+	if(sd4==1)
+		document.getElementById('d4').style.display="block";
+	else
+		document.getElementById('d4').style.display="none";
+
+	if(sd3==1)
+		document.getElementById('d3').style.display="block";
+	else
+		document.getElementById('d3').style.display="none";
+
+	if(sd2==1)
+		document.getElementById('d2').style.display="block";
+	else
+		document.getElementById('d2').style.display="none";
+
+
+	if(sa0==1)
+		document.getElementById('a0').style.display="block";
+	else
+		document.getElementById('a0').style.display="none";
+
+	if(sa1==1)
+		document.getElementById('a1').style.display="block";
+	else
+		document.getElementById('a1').style.display="none";
+
+	if(sa2==1)
+		document.getElementById('a2').style.display="block";
+	else
+		document.getElementById('a2').style.display="none";
+
+	if(sa3==1)
+		document.getElementById('a3').style.display="block";
+	else
+		document.getElementById('a3').style.display="none";
+
+	if(sa4==1)
+		document.getElementById('a4').style.display="block";
+	else
+		document.getElementById('a4').style.display="none";
+
+	if(sa5==1)
+		document.getElementById('a5').style.display="block";
+	else
+		document.getElementById('a5').style.display="none";
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

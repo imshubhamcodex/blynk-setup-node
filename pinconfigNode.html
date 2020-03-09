@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pin Selection</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta https-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="style/pin.css">
+</head>
+	
+
+	<script type="text/javascript">
+		var d13=1;
+		var d2=1;
+		var d3=1;
+		var d4=1;
+		var d5=1;
+		var d6=1;
+		var d7=1;
+		var d8=1;
+		var d9=1;
+		var d10=1;
+		var d11=1;
+		var d12=1;
+		
+		var a0=1;
+		var a1=1;
+		var a2=1;
+		var a3=1;
+		var a4=1;
+		var a5=1;
+
+		var sd13,sd12,sd11,sd10,sd9,sd8,sd7,sd6,sd5,sd4,sd3,sd2,sa0,sa1,sa2,sa3,sa4,sa5;
+		var auth=localStorage.getItem("auth-tokken");
+	
+
+		function uncheckedd13()
+		{	
+					
+				var status="";
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/D13');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+		    	console.log(status);
+		    	if(document.getElementById('D13').checked==true && d13%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('d13').style.opacity = "0.5";
+				d13++;
+				sd13=1;
+			}
+
+			else{
+				sd13=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('d13').style.display = "none" ;
+					d13++;
+					console.log(status);
+				}
+
+				else{
+
+					document.getElementById('d13').style.opacity = "1";
+					d13++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+		}
+
+			function uncheckedd2(){
+				
+					var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/D4');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    	if(document.getElementById('D4').checked==true && d2%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('d2').style.opacity = "0.5";
+				d2++;
+				sd2=1;
+			}
+
+			else{
+				sd2=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('d2').style.display = "none" ;
+					d2++;
+				}
+
+				else{
+
+					document.getElementById('d2').style.opacity = "1";
+					d2++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+
+
+			}
+
+			function uncheckedd3(){
+					
+						var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/D0');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    	if(document.getElementById('D0').checked==true && d3%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('d3').style.opacity = "0.5";
+				d3++;
+				sd3=1;
+			}
+
+			else{
+				sd3=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('d3').style.display = "none" ;
+					d3++;
+				}
+
+				else{
+
+					document.getElementById('d3').style.opacity = "1";
+					d3++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+
+				
+			}
+
+			
+
+			function uncheckedd4(){
+				
+					var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/D2');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    	if(document.getElementById('D2').checked==true && d4%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('d4').style.opacity = "0.5";
+				d4++;
+				sd4=1;
+			}
+
+			else{
+				sd4=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('d4').style.display = "none" ;
+					d4++;
+				}
+
+				else{
+
+					document.getElementById('d4').style.opacity = "1";
+					d4++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+			}
+
+				
+
+			function uncheckedd5(){
+					var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/D14');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    	if(document.getElementById('D14').checked==true && d5%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('d5').style.opacity = "0.5";
+				d5++;
+				sd5=1;
+			}
+
+			else{
+				sd5=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('d5').style.display = "none" ;
+					d5++;
+				}
+
+				else{
+
+					document.getElementById('d5').style.opacity = "1";
+					d5++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+
+			}
+
+
+			function uncheckedd6(){
+				
+					var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/D12');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    	if(document.getElementById('D12').checked==true && d6%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('d6').style.opacity = "0.5";
+				d6++;
+				sd6=1;
+			}
+
+			else{
+				sd6=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('d6').style.display = "none" ;
+					d6++;
+				}
+
+				else{
+
+					document.getElementById('d6').style.opacity = "1";
+					d6++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+			}
+
+			
+
+			function uncheckedd7(){
+				
+					var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/D13');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    if(document.getElementById('D13').checked==true && d7%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('d7').style.opacity = "0.5";
+				d7++;
+				sd7=1;
+			}
+
+			else{
+
+				sd7=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('d7').style.display = "none" ;
+					d7++;
+				}
+
+				else{
+
+					document.getElementById('d7').style.opacity = "1";
+					d7++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+			}
+
+			
+
+			function uncheckedd8(){
+				
+					var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/D15');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    if(document.getElementById('D15').checked==true && d8%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('d8').style.opacity = "0.5";
+				d8++;
+				sd8=1;
+			}
+
+			else{
+				sd8=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('d8').style.display = "none" ;
+					d8++;
+				}
+
+				else{
+
+					document.getElementById('d8').style.opacity = "1";
+					d8++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+
+			}
+
+			function uncheckedd9(){
+				
+					var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/D9');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    	if(document.getElementById('D9').checked==true && d9%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('d9').style.opacity = "0.5";
+				d9++;
+				sd9=1;
+			}
+
+			else{
+				sd9=0
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('d9').style.display = "none" ;
+					d9++;
+				}
+
+				else{
+
+					document.getElementById('d9').style.opacity = "1";
+					d9++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+			}
+
+			
+
+			function uncheckedd10(){
+					
+						var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/D10');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    	if(document.getElementById('D10').checked==true && d10%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('d10').style.opacity = "0.5";
+				d10++;
+				sd10=1;
+			}
+
+			else{
+				sd10=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('d10').style.display = "none" ;
+					d10++;
+				}
+
+				else{
+
+					document.getElementById('d10').style.opacity = "1";
+					d10++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+			}
+
+
+			function uncheckedd11(){
+				
+					var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/D11');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    	if(document.getElementById('D11').checked==true && d11%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('d11').style.opacity = "0.5";
+				d11++;
+				sd11=1;
+			}
+
+			else{
+				sd11=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('d11').style.display = "none" ;
+					d11++;
+				}
+
+				else{
+
+					document.getElementById('d11').style.opacity = "1";
+					d11++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+			}
+
+
+			function uncheckedd12(){
+				
+					var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/D12');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    	if(document.getElementById('D12').checked==true && d12%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('d12').style.opacity = "0.5";
+				d12++;
+				sd12=1;
+			}
+
+			else{
+				sd12=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('d12').style.display = "none" ;
+					d12++;
+				}
+
+				else{
+
+					document.getElementById('d12').style.opacity = "1";
+					d12++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+			}
+
+			
+
+			function uncheckeda0(){
+				
+					var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/A0');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    	if(document.getElementById('A0').checked==true && a0%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('a0').style.opacity = "0.5";
+				a0++;
+				sa0=1;
+			}
+
+			else{
+				sa0=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('a0').style.display = "none" ;
+					a0++;
+				}
+
+				else{
+
+					document.getElementById('a0').style.opacity = "1";
+					a0++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+			}
+
+
+			function uncheckeda1(){
+				
+
+					var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/A1');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    	if(document.getElementById('A1').checked==true && a1%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('a1').style.opacity = "0.5";
+				a1++;
+				sa1=1;
+			}
+
+			else{
+				sa1=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('a1').style.display = "none" ;
+					a1++;
+				}
+
+				else{
+
+					document.getElementById('a1').style.opacity = "1";
+					a1++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+			}
+
+			
+
+			function uncheckeda2(){
+				
+
+					var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/A2');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    	if(document.getElementById('A2').checked==true && a2%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('a2').style.opacity = "0.5";
+				a2++;
+				sa2=1;
+			}
+
+			else{
+				sa2=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('a2').style.display = "none" ;
+					a2++;
+				}
+
+				else{
+
+					document.getElementById('a2').style.opacity = "1";
+					a2++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+			}
+
+			
+
+			function uncheckeda3(){
+				
+
+					var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/A3');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    	if(document.getElementById('A3').checked==true && a3%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('a3').style.opacity = "0.5";
+				a3++;
+				sa3=1;
+			}
+
+			else{
+				sa3=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('a3').style.display = "none" ;
+					a3++;
+				}
+
+				else{
+
+					document.getElementById('a3').style.opacity = "1";
+					a3++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+			}
+
+				
+
+			function uncheckeda4(){
+				
+
+					var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/A4');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    	if(document.getElementById('A4').checked==true && a4%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('a4').style.opacity = "0.5";
+				a4++;
+				sa4=1;
+			}
+
+			else{
+				sa4=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('a4').style.display = "none" ;
+					a4++;
+				}
+
+				else{
+
+					document.getElementById('a4').style.opacity = "1";
+					a4++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+			}
+
+				
+
+			function uncheckeda5(){
+				
+					var status;
+				var request = new XMLHttpRequest();
+
+			request.open('GET', 'https://blynk-cloud.com/'+auth+'/get/A5');
+
+			request.onreadystatechange = function () {
+		  if (this.readyState === 4 ) 
+		  {
+		    console.log('Status:', this.status);
+		    console.log('Headers:', this.getAllResponseHeaders());
+		    console.log('Body:', this.responseText);
+		    status=this.responseText;
+
+		    	if(document.getElementById('A5').checked==true && a5%2!=0 &&(status.localeCompare("Requested pin doesn't exist in the app.")))
+		    	{
+
+				document.getElementById('a5').style.opacity = "0.5";
+				a5++;
+				sa5=1;
+			}
+
+			else{
+				sa5=0;
+
+				if(!status.localeCompare("Requested pin doesn't exist in the app."))
+				{
+					alert("Requested pin doesn't exist in the app.");
+					document.getElementById('a5').style.display = "none" ;
+					a5++;
+				}
+
+				else{
+
+					document.getElementById('a5').style.opacity = "1";
+					a5++;
+				}
+				
+			}
+
+
+		    }
+  			
+			};
+
+			request.send();
+			}
+
+
+
+			function passVal()
+			{
+				localStorage.setItem("sd2",sd2)
+				localStorage.setItem("sd3",sd3)
+				localStorage.setItem("sd4",sd4)
+				localStorage.setItem("sd5",sd5)
+				localStorage.setItem("sd6",sd6)
+				localStorage.setItem("sd7",sd7)
+				localStorage.setItem("sd8",sd8)
+				localStorage.setItem("sd9",sd9)
+				localStorage.setItem("sd10",sd10)
+				localStorage.setItem("sd11",sd11)
+				localStorage.setItem("sd12",sd12)
+				localStorage.setItem("sd13",sd13)
+
+				localStorage.setItem("sa0",sa0)
+				localStorage.setItem("sa1",sa1)
+				localStorage.setItem("sa2",sa2)
+				localStorage.setItem("sa3",sa3)
+				localStorage.setItem("sa4",sa4)
+				localStorage.setItem("sa5",sa5)
+
+				if(sd2==1||sd3==1||sd4==1||sd5==1||sd6==1||sd7==1||sd9==1||sd8==1||sd10==1||sd11==1||sd12==1||sd13==1||sa0==1||sa1==1||sa2==1||sa3==1||sa4==1||sa5==1)
+					window.open("onoffNode.html");
+
+
+			}
+
+
+
+
+
+
+
+				
+		
+	</script>
+
+	
+
+<body>
+
+	<div id="heading">
+		<h1>Select Used Pins</h1>
+	</div>
+	
+	<form >
+			     
+     	<div id = 'pins'> 
+     		<table>
+     			<tr>
+     				<td>
+	     					<label>
+						  	<input type="radio" id="D4" onclick="uncheckedd2()" value="big">
+						  	<img id="d2" src="./images/d2.jpg">
+							</label>
+     				</td>
+     				<td>
+     						<label>
+						  	<input type="radio" id="D0" onclick="uncheckedd3()" value="big">
+						  	<img id="d3" src="./images/d3.jpg">
+							</label>
+     				</td>
+     			</tr>
+
+     			<tr>
+     				<td>
+     					<label>
+					  	<input type="radio" id="D2" onclick="uncheckedd4()" value="big">
+					  	<img id="d4" src="./images/d4.jpg">
+						</label>	
+     				</td>
+     				<td>
+     					<label>
+					  	<input type="radio" id="D14" onclick="uncheckedd5()" value="big">
+					  	<img id="d5" src="./images/d5.jpg">
+						</label>
+     					
+     				</td>
+     			</tr>
+
+     			<tr>
+     				<td>
+     					<label>
+					  	<input type="radio" id="D12" onclick="uncheckedd6()" value="big">
+					  	<img id="d6" src="./images/d6.jpg">
+						</label>
+     				</td>
+     				<td>
+     					<label>
+					  	<input type="radio" id="D13" onclick="uncheckedd7()" value="big">
+					  	<img id="d7" src="./images/d7.jpg">
+						</label>
+     				</td>
+     			</tr>
+
+     			<tr>
+     				<td>
+     					<label>
+					  	<input type="radio" id="D15" onclick="uncheckedd8()" value="big">
+					  	<img id="d8" src="./images/d8.jpg">
+						</label>
+     				</td>
+     			</tr>
+
+     			
+     		</table>
+				
+
+	
+				
+        </div>
+        <button onclick="passVal()">Submit</button>
+     
+
+	</form>
+
+</body>
+</html>
